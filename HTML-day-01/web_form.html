@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 style="color: red">HTML Forms</h1>
+    <form>
+      <h2>Different uses of pattern for different types of input</h2>
+      <ol>
+        <li>
+          <p>
+            An input element with type="password" that must contain 8 or more
+            characters:
+          </p>
+          <label for="pwd1">password1: </label>
+          <input
+            id="pwd1"
+            type="password"
+            pattern=".{8,}"
+            title="Eight or more characters"
+            required
+          />
+        </li>
+        <li>
+          <p>
+            An input element with type="password" that must contain 8 or more
+            characters that are of at least one number, and one uppercase and
+            lowercase letter:
+          </p>
+          <label for="pwd2">password2: </label>
+          <input
+            type="password"
+            id="pwd2"
+            name="pwd2"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+          />
+        </li>
+        <li>
+          <p>
+            An input element with type="email" that must be in the following
+            order: characters@characters.domain (characters followed by an @
+            sign, followed by more characters, and then a "." After the "."
+            sign, add at least 2 letters from a to z:
+          </p>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+        </li>
+        <li>
+          <p>
+            An input element with type="search" that CANNOT contain the
+            following characters: ' or "
+          </p>
+          <label for="search">Search:</label>
+          <input
+            type="search"
+            id="search"
+            name="search"
+            pattern="[^'\x22]+"
+            title="Invalid input"
+          />
+        </li>
+        <li>
+          <p>
+            An input element with type="url" that must start with http:// or
+            https:// followed by at least one character:
+          </p>
+          <label for="website">Homepage:</label>
+          <input
+            type="url"
+            id="website"
+            name="website"
+            pattern="https?://.+"
+            title="Include http://"
+          />
+        </li>
+        <li>
+          <p>
+            An HTML form with an input field that can contain only three letters
+            (no numbers or special characters):
+          </p>
+          <label for="country_code">Country code:</label>
+          <input
+            type="text"
+            id="country_code"
+            name="country_code"
+            pattern="[A-Za-z]{3}"
+            title="Three letter country code"
+          />
+        </li>
+      </ol>
+      <input type="submit" />
+    </form>
+    <p>
+      reference:
+      <a
+        target="_blank"
+        href="https://www.w3schools.com/tags/att_input_pattern.asp#:~:text=The%20pattern%20attribute%20specifies%20a,pattern%20to%20help%20the%20user."
+        >W3schools</a
+      >
+    </p>
+    <br />
+    <p>my free code camp project: <a href="freecodeforms.html">link</a></p>
+  </body>
+</html>
