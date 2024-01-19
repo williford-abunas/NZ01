@@ -2,21 +2,20 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background-color: #1b1b32;
-  color: #f5f6f7;
-  font-family: Tahoma;
-  font-size: 16px;
+  background-color: azure;
+  font-family: Verdana;
+  font-size: 16px; 
 }
 
-h1, p {
+h1, .description {
   margin: 1em auto;
   text-align: center;
 }
 
 form {
-  width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
+  width: 70vw;
+  max-width: 600px;
+  min-width: 400px;
   margin: 0 auto;
   padding-bottom: 2em;
 }
@@ -24,7 +23,7 @@ form {
 fieldset {
   border: none;
   padding: 2rem 0;
-  border-bottom: 3px solid #3b3b4f;
+  border-bottom: 3px solid blue;
 }
 
 fieldset:last-of-type {
@@ -36,18 +35,20 @@ label {
   margin: 0.5rem 0;
 }
 
-input,
-textarea,
-select {
-  margin: 10px 0 0 0;
+input, textarea, select {
+  margin: 5px 0 0 0;
   width: 100%;
   min-height: 2em;
 }
 
 input, textarea {
-  background-color: #0a0a23;
-  border: 1px solid #0a0a23;
-  color: #ffffff;
+  background-color: yellow;
+  border: 1px solid green;
+  color: black;
+}
+
+p {
+  margin: 0 auto;
 }
 
 .inline {
@@ -56,25 +57,26 @@ input, textarea {
   vertical-align: middle;
 }
 
+.yn, .hobbies {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.p2 {
+  margin: 5px 0 0 0;
+}
+
 input[type="submit"] {
   display: block;
   width: 60%;
   margin: 1em auto;
   height: 2em;
   font-size: 1.1rem;
-  background-color: #3b3b4f;
-  border-color: white;
+  background-color: azure;
+  border-color: blue;
   min-width: 300px;
 }
 
 input[type="file"] {
   padding: 1px 2px;
-}
-
-.inline{
-  display: inline; 
-}
-
-a {
-  color: #dfdfe2;
 }
