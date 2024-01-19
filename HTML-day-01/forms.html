@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <label for="movie-title">Movie Title: </label>
+      <input type="text" id="movie-title" />
+
+      <br />
+
+      <label for="book-selection">Select a book: </label>
+      <input type="radio" id="book-selection" name="book-selection" />
+      Harry Potter
+      <input type="radio" id="book-selection" name="book-selection" /> Hunger
+      Games
+
+      <br />
+
+      <label for="checkbox">Select colors: </label>
+      <input type="checkbox" id="checkbox" />
+      Harry Potter
+      <input type="checkbox" id="checkbox" /> Hunger Games
+      <br />
+      <label for="comments">Comments: </label>
+      <textarea id="comments" rows="4" cols="20"></textarea>
+      <br />
+      <label for="genre">Select a genre: </label>
+      <select name="genre" id="genre">
+        <option value="thriller">Thriller</option>
+        <option value="comedy">Comedy</option>
+        <option value="romance">Romance</option>
+      </select>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
